@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rclips</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="nav-wrapper" id="navWrapper">
+        <div class="nav-container">
+            <button class="nav-trigger" id="navTrigger">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </button>
+            <div class="nav-menu" id="navMenu">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <header class="hero">
+        <div class="hero-inner">
+            <video autoplay loop muted playsinline disablePictureInPicture disableRemotePlayback
+                controlsList="nodownload noplaybackrate nofullscreen" class="hero-video">
+                <source src="assets/videos/barber-b-roll.mp4" type="video/mp4">
+            </video>
+
+            <div class="video-text-overlay" id="textOverlay">
+                <div class="scramble-line" data-orig="Make.">Make.</div>
+                <div class="scramble-line" data-orig="Every Day.">Every Day.</div>
+                <div class="scramble-line" data-orig="Better.">Better.</div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="panel split-panel">
+            <div class="about-left">
+                <div class="photo-stack" id="photoStack"></div>
+            </div>
+
+            <div class="about-right">
+                <h3 class="testimonial-text">We design trend-right products, build iconic brands, and shape experiences
+                    that inspire people to live better.<br><br>Grounded in craftsmanship and driven by innovation,
+                    Wolverine Worldwide continues to evolve with purpose.</h3>
+
+                <a href="#services" class="btn-learn-more">
+                    Learn More About Us
+                    <span class="arrow">&rarr;</span>
+                </a>
+            </div>
+        </section>
+
+        <section id="services" class="panel booking-panel">
+            <div class="booking-content">
+
+                <div class="booking-step active-step" id="step1">
+                    <h2 class="step-title">Service</h2>
+                    <div class="service-list">
+                        <div class="service-item">
+                            <div class="service-info">
+                                <h4>Haircut</h4>
+                            </div>
+                            <div class="service-action">
+                                <span class="service-meta">25 min | $40</span>
+                                <button class="select-btn select-service-btn" data-target="2">Select</button>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-info">
+                                <h4>Haircut + Beard</h4>
+                            </div>
+                            <div class="service-action">
+                                <span class="service-meta">35 min | $45</span>
+                                <button class="select-btn select-service-btn" data-target="2">Select</button>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-info">
+                                <h4>Shape up</h4>
+                            </div>
+                            <div class="service-action">
+                                <span class="service-meta">10 min | $20</span>
+                                <button class="select-btn select-service-btn" data-target="2">Select</button>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-info">
+                                <h4>Kids Cut</h4>
+                            </div>
+                            <div class="service-action">
+                                <span class="service-meta">20 min | $30</span>
+                                <button class="select-btn select-service-btn" data-target="2">Select</button>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-info">
+                                <h4>Senior Cut</h4>
+                            </div>
+                            <div class="service-action">
+                                <span class="service-meta">20 min | $35</span>
+                                <button class="select-btn select-service-btn" data-target="2">Select</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="booking-step" id="step2">
+                    <h2 class="step-title">Add-ons</h2>
+                    <div class="service-list">
+                        <div class="service-item">
+                            <div class="service-info">
+                                <h4>Add-ons (eyebrows, design, etc)</h4>
+                                <p class="service-desc">Eyebrow lineup and all designs are completely FREE!!</p>
+                            </div>
+                            <div class="service-action">
+                                <span class="service-meta">5 min | $0</span>
+                                <button class="select-btn toggle-addon-btn">Add</button>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-info">
+                                <h4>Hair wash</h4>
+                            </div>
+                            <div class="service-action">
+                                <span class="service-meta">10 min | $10</span>
+                                <button class="select-btn toggle-addon-btn">Add</button>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-info">
+                                <h4>Presidential Service</h4>
+                            </div>
+                            <div class="service-action">
+                                <span class="service-meta">1 h 30 min | $100</span>
+                                <button class="select-btn toggle-addon-btn">Add</button>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-info">
+                                <h4>Black Mask Facial</h4>
+                            </div>
+                            <div class="service-action">
+                                <span class="service-meta">15 min | $15</span>
+                                <button class="select-btn toggle-addon-btn">Add</button>
+                            </div>
+                        </div>
+                        <div class="service-item">
+                            <div class="service-info">
+                                <h4>Hot Towel Shave</h4>
+                            </div>
+                            <div class="service-action">
+                                <span class="service-meta">15 min | $20</span>
+                                <button class="select-btn toggle-addon-btn">Add</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="booking-step" id="step3">
+                    <h2 class="step-title">Confirm Details</h2>
+                    <div class="booksy-container">
+                        <p
+                            style="color: var(--light-black); border: 2px dashed var(--light-gray); padding: 3rem; text-align: center;">
+                            [Booksy Iframe]</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination-sidebar">
+                <div class="vertical-tracker">
+                    <div class="tracker-line">
+                        <div class="tracker-progress"></div>
+                    </div>
+                    <div class="tracker-step active" data-step="1"></div>
+                    <div class="tracker-step" data-step="2"></div>
+                    <div class="tracker-step" data-step="3"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews" class="panel split-vertical">
+            <div class="split-top">
+                <div class="carousel-wrapper">
+
+                    <div class="carousel-track">
+                        <div class="review-card">
+                            <h4 class="review-name">Michael T.</h4>
+                            <p class="review-text">- An absolute masterclass in grooming. The precision is unmatched.</p>
+                        </div>
+                        <div class="review-card">
+                            <h4 class="review-name">James R.</h4>
+                            <p class="review-text">- Elevated the standard barbershop experience to cinematic levels.</p>
+                        </div>
+                        <div class="review-card">
+                            <h4 class="review-name">David S.</h4>
+                            <p class="review-text">- Clean, sharp, and exactly what I needed. Highly recommend.</p>
+                        </div>
+                        <div class="review-card">
+                            <h4 class="review-name">Marcus W.</h4>
+                            <p class="review-text">- Incredible atmosphere. Every detail is carefully considered.</p>
+                        </div>
+
+                        <!-- SET 2 (DUPLICATED FOR INFINITE SCROLL) -->
+                        <div class="review-card">
+                            <h4 class="review-name">Michael T.</h4>
+                            <p class="review-text">- An absolute masterclass in grooming. The precision is unmatched.</p>
+                        </div>
+                        <div class="review-card">
+                            <h4 class="review-name">James R.</h4>
+                            <p class="review-text">- Elevated the standard barbershop experience to cinematic levels.</p>
+                        </div>
+                        <div class="review-card">
+                            <h4 class="review-name">David S.</h4>
+                            <p class="review-text">- Clean, sharp, and exactly what I needed. Highly recommend.</p>
+                        </div>
+                        <div class="review-card">
+                            <h4 class="review-name">Marcus W.</h4>
+                            <p class="review-text">- Incredible atmosphere. Every detail is carefully considered.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="contact" class="split-bottom contact-footer">
+                <div class="socials">
+                    <a href="#">IG</a>
+                    <a href="#">X</a>
+                    <a href="#">TT</a>
+                </div>
+                
+                <a href="mailto:info@rclips.com" class="contact-email">info@rclips.com</a>
+                
+                <div class="footer-links">
+                    &copy; 2026 Rclips <span class="divider">|</span> 
+                    <a href="#">Privacy Policy</a> <span class="divider">|</span> 
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
